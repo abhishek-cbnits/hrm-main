@@ -1,0 +1,27 @@
+      summary: "Leave allotment"
+      description: "Leave allotment"
+      consumes:
+        - multipart/form-data
+      produces:
+          - application/json
+      parameters:
+        - name: x-access-token
+          in: header
+          description: an authorization header
+          required: true
+          type: string
+        - name: employee_id
+          in: formData
+          description: Enter employeee id .
+          required: true
+          type: string
+        - name: alloted_leave
+          in: formData
+          description: Enter alloted leave.
+          required: true
+          type: string
+      tags:
+        - Leave Manage
+      responses:
+        '200':
+          description: "Successfully Leave alloted"

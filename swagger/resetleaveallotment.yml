@@ -1,0 +1,17 @@
+      summary: "Leave reset"
+      description: "Leave reset allotment"
+      consumes:
+        - multipart/form-data
+      produces:
+          - application/json
+      parameters:
+        - name: x-access-token
+          in: header
+          description: an authorization header
+          required: true
+          type: string
+      tags:
+        - Leave Manage
+      responses:
+        '200':
+          description: "Successfully Leave reset"

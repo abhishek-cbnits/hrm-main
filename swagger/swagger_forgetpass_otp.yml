@@ -1,0 +1,21 @@
+      summary: "forget pass"
+      description: "sending otp"
+      consumes:
+        - multipart/form-data
+      produces:
+          - application/json
+      parameters:
+        - name: auth
+          in: formData
+          description: Enter phno or email or employee code.
+          required: true
+          type: string
+      tags:
+        - Employee Manage
+      responses:
+        '200':
+          description: "otp send successfull"
+        '401':
+          description: wrong input
+        '404':
+          description: error

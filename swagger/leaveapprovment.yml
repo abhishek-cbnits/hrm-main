@@ -1,0 +1,32 @@
+      summary: "Leave application"
+      description: "Leave add application"
+      consumes:
+        - multipart/form-data
+      produces:
+          - application/json
+      parameters:
+        - name: x-access-token
+          in: header
+          description: an authorization header
+          required: true
+          type: string
+        - name: Leave_application_id
+          in: formData
+          description: Enter Leave_application_id .
+          required: true
+          type: string
+        - name: Leave_allotment_id
+          in: formData
+          description: Enter Leave_allotment_id .
+          required: true
+          type: string
+        - name: approval
+          in: formData
+          description: Enter yes or no .
+          required: true
+          type: string
+      tags:
+        - Leave Manage
+      responses:
+        '200':
+          description: "Successfully Leave alloted"

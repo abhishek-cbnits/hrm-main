@@ -1,0 +1,25 @@
+      summary: "Leave Application"
+      description: ""
+      consumes:
+        - multipart/form-data
+      produces:
+          - application/json
+      parameters:
+        - name: x-access-token
+          in: header
+          description: an authorization header
+          required: true
+          type: string
+        - name: find
+          in: query
+          description: starting data.
+          type: string
+        - name: status
+          in: query
+          description: starting data.
+          type: string
+      tags:
+        - Leave Manage
+      responses:
+        '200':
+          description: "success full "
