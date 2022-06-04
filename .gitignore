@@ -1,0 +1,5 @@
+# ignore environ directories
+environ/
+
+# ignore pyc file
+*.pyc
